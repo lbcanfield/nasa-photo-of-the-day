@@ -2,12 +2,13 @@ import React from 'react';
 
 const BuildPage = (props) =>
 {
-    console.log( props );
+    // console.log( props );
     
     return (
         <section className='contentWrapper'>
             <div className='contentText'>
                 <h2>{props.data.title}</h2>
+                <p>{props.data.date}</p>
                 <p>{props.data.explanation}</p>
             </div>
             <div className='contentImg'>

@@ -8,10 +8,20 @@ function App() {
   const [data, setData] = useState(testData);
   return (
     <div className="App">
-      <BuildPage data={data} />
+      { data && <BuildPage data={data} /> }  {/*short circuit evaluation */}
     </div>
   );
 }
+
+const potdContent = document.querySelector('.contentWrapper');
+const potdText = document.querySelector('.contentText');
+const potdImage = document.querySelector('.contentImg');
+const potdImg = document.querySelector('img');
+
+//Garbage... doesn't work consistently
+
+
+
 
 export default App;
 
